@@ -1,0 +1,20 @@
+Question 2:
+The missing details in the user story are essentially the functional rules in the limit values:
+
+* When the start date is the current date: two scenarios can be considered 
+1- The repayment status changes from "not started" to the calculated value
+2- The repayment status is equal to "not started" until the end of the day
+
+* When the end date is the current date: two scenarios can be considered
+1- The repayment status is displayed in blue until the end of the day
+2- The repayment status is displayed in red from the start of the day
+
+* When the loan's start date is equal to the loan's end date the functional rules are not specified
+
+For the user interface, the repayment status format is missing.
+
+Question 3:
+In this case, the problem appeared because the loan's start date is equal to the current date (repayment status = not started ) which is also equal to the loan's end date (repayment status is displayed in red)
+For these reasons I consider that it should be better to change repayment status from "not started" to the calculated value when the loan's start date is equal to the current date.
+Also, repayment status should be displayed in blue until the loan's end date is finished.
+That's how, in that case repaid status would be equal to 0.09% and would be displayed in blue.
